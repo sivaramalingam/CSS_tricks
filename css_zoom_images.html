@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+		html, body, div, h1, p{
+			margin:0;
+			padding:0;
+		}
+		.wrapper{
+			width:100%;
+			margin:0px auto;
+		}
+		.container{
+			width:90%;
+			margin:20px auto;
+		}
+		.container img{
+			transition: transform .6s linear;
+			-webkit-transition: -webkit-transform .6s linear;
+			-moz-transition: -moz-transform .6s linear;
+			opacity:0.6
+		}
+		.container img:after{
+			content:"Click here";
+			opacity:0.5;
+			height:100px;
+			width:100px;
+		}
+		.container img:hover{
+			transform: scale(1.5);
+			-webkit-transform: scale(1.5);
+			-moz-transform: scale(1.5);
+			opacity:1;
+		}
+		.container img:hover:after{
+			opacity:1;
+		}
+
+  </style>
+ </head>
+ <body>
+  <div id="" class="wrapper">
+	<div id="" class="container">
+		<img src="assets/images/fb-icon.png" width="32" height="32" border="0" alt="">
+		<img src="assets/images/twitter-icon.png" width="32" height="32" border="0" alt="">
+		<img src="assets/images/youtube-icon.png" width="32" height="32" border="0" alt="">
+	</div>
+  </div>
+ </body>
+</html>

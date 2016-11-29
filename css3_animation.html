@@ -1,0 +1,108 @@
+<html>
+<head>
+	<style type="text/css">
+		html, body, div, h1, p{
+		margin:0;
+		padding:0;
+		}
+		.wrapper{
+			width:100%;
+			margin:0px auto;
+		}
+		.box{
+			width:20%;
+			padding:30px;
+			color:#f00;
+			border:2px solid blue;
+			margin:20px;
+			animation-name: animate;
+			animation-duration:10s;
+			animation-iteration-count: infinite;
+		}
+		h1{
+			color:black;
+			animation-name:hanimate;
+			animation-duration:4s;
+			animation-direction:alternate;
+
+		}
+		@keyframes animate{
+			from{
+				margin-left:70%;
+			}
+			to{
+				margin-right:30%;
+				width:10%;
+			}
+		}
+
+		@keyframes rotate{
+			0%{
+				transform:rotate(-180deg);
+				-webkit-transform: rotate(-180deg);
+				transition: all 2s linear 2s;
+				-webkit-transform: all 2s linear 2s;
+				background:blue;
+			}
+			25%{
+				margin-left:40%;
+				transform:rotate(180deg);
+				-webkit-transform: rotate(180deg);
+				transition:all 2s linear 2s;
+				-webkit-transition: all 2s linear 2s;
+				background:orange;
+			}
+			50%{
+				margin-left:80%;
+				transform:rotate(360deg);
+				-webkit-transform: rotate(360deg);
+				transition:all 2s linear 2s;
+				-webkit-transition: all 2s linear 2s;
+				background:red;
+			}
+			75%{
+				margin-left:40%;
+				transform:rotate(-180deg);
+				-webkit-transform: rotate(-180deg);
+				transition:all 2s linear 2s;
+				-webkit-transition: all 2s linear 2s;
+				background:white;
+			}
+			100%{
+				margin-left:5%;
+				transform:rotate(-360deg);
+				-webkit-transform: rotate(-360deg);
+				transition:all 2s linear 2s;
+				-webkit-transition: all 2s linear 2s;
+				background:#621a4b;
+			}
+
+		}
+		.rotate_css{
+			width:100px;
+			height:100px;
+			border-radius:5px;
+			border:1px solid black;
+			background:yellow;
+			margin-left:5%;
+			animation-name:rotate;
+			animation-duration:10s;
+			animation-iteration-count:infinite;
+		}
+		
+
+
+	</style>
+</head>
+<body>
+	<div id="" class="wrapper">
+		<div id="" class="box">
+			WELCOME BOX!!!
+		</div>
+		<h1>CSS3 Animations Class test</h1>
+		<div id="" class="rotate_css">
+			<p>Animation</p>
+		</div>
+	</div>
+</body>
+</html>
